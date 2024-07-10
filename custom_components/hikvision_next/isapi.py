@@ -234,8 +234,8 @@ class ISAPI:
 
         # Set if NVR based on whether more than 1 supported IP or analog cameras
         # Single IP camera will show 0 supported devices in total
-        if self.device_info.support_analog_cameras + self.device_info.support_digital_cameras > 1:
-            self.device_info.is_nvr = True
+        #if self.device_info.support_analog_cameras + self.device_info.support_digital_cameras > 1:
+        self.device_info.is_nvr = True
 
     async def get_cameras(self):
         """Get camera objects for all connected cameras."""
